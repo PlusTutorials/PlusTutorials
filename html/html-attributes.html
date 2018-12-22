@@ -3,38 +3,68 @@
 
   <head>
     <meta charset="utf-8">
-    <title>HTML Tutorials</title>
-    <meta name="description" content="HTML Tutorial for beginners - Learn HTML to develop  your website in simple and easy steps starting from basic to advanced concepts with examples including overview, basic tags, meta tags, attributes, formatting, phrase tags, comments, fonts, marquees, images, links, tables, frames, lists, layouts, colors, forms, backgrounds, style sheet, javascript." />
+    <title>HTML Attributes</title>
+    <meta name="description" content="HTML Overview - Learn HTML to develop  your website in simple and easy steps starting from basic to advanced concepts with examples including overview, basic tags, meta tags, attributes, formatting, phrase tags, comments, fonts, marquees, images, links, tables, frames, lists, layouts, colors, forms, backgrounds, style sheet, javascript." />
     <meta name="keywords" content="HTML, Tutorial, beginners, develop, website, simple, easy, steps, starting, overview, basic tags, meta tags, attributes, formatting, phrase tags, comments, fonts, marquees, images, links, tables, frames, lists, layouts, colors, forms, backgrounds, style sheet, javascript." />
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="plustutorials.com">
     <link rel="stylesheet" href="../theme/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../theme/css/style.css">
   </head>
 
-  <body class="background">
+  <body style="background-color: #F0F3F5; font-family: sans-serif;">
     <header>
-      <nav class="navbar navbar-expand-md justify-content-between">
+      <nav class="navbar navbar-expand-md justify-content-between" style="background-color: white !important; box-shadow: 0 2px 10px 0 rgba(0,0,0,0.08);">
         <div class="container">
           <a class="navbar-brand" href="../index.html"><img src="../imgs/plus_black.png" style="padding-right: 4%;"><b>Plus</b> <b style="color: #95C152;">Tutorials</b></a>
         </div>      
       </nav>
     </header>
     
-    <section>
+    <section style="padding: 10px 0;">
       <div class="container">
         <div class="row">          
           <div class="col-lg-3 d-none d-lg-block">
-            
+            <style>
+              a {
+                color: black;
+                text-decoration: none !important;
+              }
+
+              a:hover {
+                color: black;
+              }
+
+              a.heading {
+                color: white;
+                background-color: #95C152;
+                line-height: 10px;
+              }
+
+              a.borderless {
+                font-size: 13px;
+                background-color: #F0F3F5;
+                line-height: 9px;
+                border-right: 0 !important;
+                border-left: 0 !important;
+                border-top: 1px dotted #ccc;
+                border-bottom: 1px dotted #ccc;
+                margin-left: 0;
+                transition: background-color 0.5s ease-out;
+              }
+
+              .list-link {
+                font-size: 9px;
+              }
+            </style>
             <ul class="list-group">
               <a class="list-group-item heading" href="index.html">&nbsp;&nbsp;HTML Tutorial</a>
-              <a class="list-group-item borderless" href="index.html" style="background-color: #D6D6D6 !important;"><span class="list-link">&#9672;</span> HTML - Home</a>
+              <a class="list-group-item borderless" href="index.html"><span class="list-link">&#9672;</span> HTML - Home</a>
               <a class="list-group-item borderless" href="html-overview.html"><span class="list-link">&#9672;</span> HTML - Overview</a>
               <a class="list-group-item borderless" href="html-basic-tags.html"><span class="list-link">&#9672;</span> HTML - Basic Tags</a>
               <a class="list-group-item borderless" href="html-elements.html"><span class="list-link">&#9672;</span> HTML - Elements</a>
-              <a class="list-group-item borderless" href="html-attributes.html"><span class="list-link">&#9672;</span> HTML - Attributes</a>
-              <a class="list-group-item borderless" href="html-formatting"><span class="list-link">&#9672;</span> HTML - Formatting</a>
+              <a class="list-group-item borderless" style="background-color: #D6D6D6 !important;" href="html-attributes.html"><span class="list-link">&#9672;</span> HTML - Attributes</a>
+              <a class="list-group-item borderless" href="html-formatting.html"><span class="list-link">&#9672;</span> HTML - Formatting</a>
               <a class="list-group-item borderless" href=""><span class="list-link">&#9672;</span> HTML - Phrase Tags</a>
               <a class="list-group-item borderless" href=""><span class="list-link">&#9672;</span> HTML - Mets Tags</a>
               <a class="list-group-item borderless" href=""><span class="list-link">&#9672;</span> HTML - Comments</a>
@@ -61,28 +91,31 @@
           </div>
           
           <div class="col-lg-6 col-md-12" style="background-color: white; border: 1px solid #d5dcec;">            
-            <h1 class="text-center" style="padding-top: 2%;">HTML Tutorial</h1>
+            <h1 class="text-center" style="margin: 0.2em 0.2em 0.2em 0; letter-spacing: -1; text-shadow: 2px 2px 3px #ccc; font-size: 2em; padding-top: 2%;">HTML - Attributes</h1>
 
             <hr style="padding-bottom: 7px;">
             
             <div style="margin-top: -1em; margin-bottom: -1em; padding-bottom: 5px;" class="row">
-              <div class="col"><a style="padding-left: 20px;" href="../index.html">&#11013; Previous Page</a></div>
-              <div class="col text-right"><a style="padding-right: 20px;" href="html-overview.html">Next Page &#10145;</a></div>
+              <div class="col"><a style="padding-left: 20px;" href="html-elements.html">&#11013; Previous Page</a></div>
+              <div class="col text-right"><a style="padding-right: 20px;" href="html-formatting.html">Next Page &#10145;</a></div>
             </div>
             
             <hr>
 
-            <p>HTML is a high-level programming language originally developed by Sun Microsystems and released in 1995. HTML runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX. This tutorial gives a complete understanding of HTML. This reference will take you through simple and practical approaches while learning HTML Programming language.</p>
-            <h1 class="text-center">Audience</h1>
-            <p>This tutorial has been prepared for the beginners to help them understand the basic to advanced concepts related to HTML Programming language.</p>
-            <h1 class="text-center">Prerequisites</h1>
-            <p>Before you start practicing various types of examples given in this reference, we assume that you are already aware about computer programs and computer programming languages.</p>
-          
+            <p style="margin: 0.0em 0.2em 0.6em 0.2em; text-align: justify;"><b>HTML Attributes</b> are used to give HTML tags extra bits of information. They define HTML tags characteristics and placed inside the element's opening tag. All attributes are made up of two parts - a <b>name</b> and a <b>value</b>.<br><br>The <b>name</b> is the property you want to set. As shown in the example below, the &#60; element consists of an attribute whose name is align (used to define the alignment of the paragraph on the page).<br><br>The <b>value</b> points to the value of the property to be set and must be put within quotations. It is important to note that attribute names and values are case-insensitive.</p>
+
+            <h2 style="letter-spacing: -1; text-shadow: 2px 2px 3px #ccc; font-size: 1.7em; padding-top: 3%;">Example</h2>
+
+            <p style="margin: 0.0em 0.2em 0.6em 0.2em; text-align: justify;">This is an example of the align attribute: <b>left, center</b> and <b>right</b>.</p>
+
+            <p data-height="300" data-theme-id="0" data-slug-hash="pqPvPz" data-default-tab="html,result" data-user="PlusTutorials" data-pen-title="HTML Attributes" class="codepen">See the Pen <a href="https://codepen.io/PlusTutorials/pen/pqPvPz/">HTML Attributes</a> by Plus Tutorials (<a href="https://codepen.io/PlusTutorials">@PlusTutorials</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+            <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
             <hr style="padding-bottom: 7px;">
             
             <div style="margin-top: -1em; margin-bottom: -1em; padding-bottom: 5px;" class="row">
-              <div class="col"><a style="padding-left: 20px;" href="../index.html">&#11013; Previous Page</a></div>
-              <div class="col text-right"><a style="padding-right: 20px;" href="html-overview.html">Next Page &#10145;</a></div>
+              <div class="col"><a style="padding-left: 20px;" href="html-elements.html">&#11013; Previous Page</a></div>
+              <div class="col text-right"><a style="padding-right: 20px;" href="html-formatting.html">Next Page &#10145;</a></div>
             </div>
             
             <hr>
@@ -110,5 +143,4 @@
       gtag('config', 'UA-128570393-1');
     </script>
   </body>
-
 </html>
