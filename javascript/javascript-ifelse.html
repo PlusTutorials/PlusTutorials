@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>JavaScript Operators</title>
+    <title>Javascript if...else Statement</title>
     <meta name="description" content="Javascript Tutorial for Beginners - Learn Javascript in simple and easy steps starting from basic to advanced concepts with examples including Javascript Syntax Objects Embedding with HTML Validations Cookies Regular Expressions Literals Variables Loops Conditions." />
     <meta name="keywords" content="Javascript, Tutorials, Learning, Beginners, Javascript Basics, Scripting Language, Javascript Tutorials, Functions, Objects, Usage." />
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -68,80 +68,52 @@
               <a class="list-group-item borderless" href="javascript-enabling.html"><span class="list-link">&#9672;</span> Javascript - Enabling</a>
               <a class="list-group-item borderless" href="javascript-placement.html"><span class="list-link">&#9672;</span> Javascript - Placement</a>
               <a class="list-group-item borderless" href="javascript-variables.html"><span class="list-link">&#9672;</span> Javascript - Variables</a>
-              <a class="list-group-item borderless" href="javascript-operators.html" style="background-color: #D6D6D6 !important;"><span class="list-link">&#9672;</span> Javascript - Operators</a>
-              <a class="list-group-item borderless" href="javascript-operators.html"><span class="list-link">&#9672;</span> Javascript - if...else</a>
+              <a class="list-group-item borderless" href="javascript-operators.html"><span class="list-link">&#9672;</span> Javascript - Operators</a>
+              <a class="list-group-item borderless" href="javascript-operators.html" style="background-color: #D6D6D6 !important;"><span class="list-link">&#9672;</span> Javascript - if...else</a>
             </ul>
           </div>
           
           <div class="col-lg-6 col-md-12" style="background-color: white; border: 1px solid #d5dcec;">            
-            <h1 class="text-center" style="margin: 0.2em 0.2em 0.2em 0; letter-spacing: -1;text-shadow: 2px 2px 3px #ccc; font-size: 2em; padding-top: 2%;">JavaScript - Operators</h1>
+            <h1 class="text-center" style="margin: 0.2em 0.2em 0.2em 0; letter-spacing: -1;text-shadow: 2px 2px 3px #ccc; font-size: 2em; padding-top: 2%;">JavaScript - If...Else Statement</h1>
 
             <hr style="padding-bottom: 7px;">
             
             <div style="margin-top: -1em; margin-bottom: -1em; padding-bottom: 5px;" class="row">
-              <div class="col"><a style="padding-left: 20px;" href="javascript-variables.html">&#11013; Previous Page</a></div>
-              <div class="col text-right"><a style="padding-right: 20px;" href="javascript-ifelse.html">Next Page &#10145;</a></div>
+              <div class="col"><a style="padding-left: 20px;" href="javascript-operators.html">&#11013; Previous Page</a></div>
+              <div class="col text-right"><a style="padding-right: 20px;" href="javascript-switch-case.html">Next Page &#10145;</a></div>
             </div>
             
             <hr>
 
-            <h2 style="letter-spacing: -1; text-shadow: 2px 2px 3px #ccc; font-size: 1.7em; padding-top: 3%;">What is an Operator?</h2>
+            <p style="margin: 0.0em 0.2em 0.6em 0.2em; text-align: justify;">Conditional statements help your program take the correct decisions and perform the right expected actions. Conditional statements perform actions based on specific conditions. We're going to explain about <b>if...else</b> statements in this tutoral.<br><br> The following <b>if...else</b> forms are available in JavaScript:<br><br>1. if statement<br>2. if...else statement<br>3. if...else if... statement.</p>
 
-            <p style="margin: 0.0em 0.2em 0.6em 0.2em; text-align: justify;">The following operators are supported in JavaScript:<br><br>1. Arithmetic Operators<br>2. Comparison Operators<br>3. Logical (or Relational) Operators<br>4. Assignment Operators<br>5. Conditional (or ternary) Operators</p>
+            <h2 style="letter-spacing: -1; text-shadow: 2px 2px 3px #ccc; font-size: 1.7em; padding-top: 3%;">if statement</h2>
 
-            <h2 style="letter-spacing: -1; text-shadow: 2px 2px 3px #ccc; font-size: 1.7em; padding-top: 3%;">Arithmetic Operators</h2>
+            <p style="margin: 0.0em 0.2em 0.6em 0.2em; text-align: justify;">The <b>if</b> statement is the basic condition statement that helps JavaScript take decisions and execute statements by evaluating the expression value if true. If the expression value is flase, then the statement will not get executed as shown in the example below:</p>
 
-            <p style="margin: 0.0em 0.2em 0.6em 0.2em; text-align: justify;">For the following example, assume that variable A holds 10 and variable B holds 20, then -
-
-            <table class="table table-bordered">
-              <thead>
-                <tr>
-                  <th>Sr.No.</th>
-                  <th><center>Operator & Description</center></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><center>1</center></td>
-                  <td>+ (Addition)<br>Adds two operands<br>Ex: A + B will give 30</td>
-                </tr>
-                <tr>
-                  <td><center>2</center></td>
-                  <td>- (Subtraction)<br>Subtracts the second operand from the first<br>Ex: A - B will give -10</td>
-                </tr>
-                <tr>
-                  <td><center>3</center></td>
-                  <td>* (Multiplication)<br>Multiple two operands<br>Ex: A * B will give 200</td>
-                </tr>
-                <tr>
-                  <td><center>4</center></td>
-                  <td>/ (Division)<br>Divides the numerator by the denominator<br>Ex: B / A will give 2</td>
-                </tr>
-                <tr>
-                  <td><center>5</center></td>
-                  <td>% (Modulus)<br>Outputs the remainder of an integer division<br>Ex: B % A will give 0</td>
-                </tr>
-                <tr>
-                  <td><center>6</center></td>
-                  <td>++ (Increment)<br>Increases an integer value by one<br>Ex: A++ will give 11</td>
-                </tr>
-                <tr>
-                  <td><center>7</center></td>
-                  <td>-- (Decrement)<br>Decreases an integer value by one<br>Ex: A-- will give 9</td>
-                </tr>
-              </tbody>
-            </table>
-
-            <h3 style="letter-spacing: -1; text-shadow: 2px 2px 3px #ccc; font-size: 1.7em; padding-top: 3%;">Example</h3>
-
-            <p data-height="985" data-theme-id="dark" data-slug-hash="bOYPab" data-default-tab="html,result" data-user="PlusTutorials" data-pen-title="JavaScript Arithmetic Operators" class="codepen">See the Pen <a href="https://codepen.io/PlusTutorials/pen/bOYPab/">JavaScript Arithmetic Operators</a> by Plus Tutorials (<a href="https://codepen.io/PlusTutorials">@PlusTutorials</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+            <p data-height="265" data-theme-id="dark" data-slug-hash="OrOKGm" data-default-tab="html,result" data-user="PlusTutorials" data-pen-title="HTML if Statement" class="codepen">See the Pen <a href="https://codepen.io/PlusTutorials/pen/OrOKGm/">HTML if Statement</a> by Plus Tutorials (<a href="https://codepen.io/PlusTutorials">@PlusTutorials</a>) on <a href="https://codepen.io">CodePen</a>.</p>
             <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+            <h2 style="letter-spacing: -1; text-shadow: 2px 2px 3px #ccc; font-size: 1.7em; padding-top: 3%;">if...else statement</h2>
+
+            <p style="margin: 0.0em 0.2em 0.6em 0.2em; text-align: justify;">The <b>'if...else'</b> statement helps JavaScript execute statements in a more controlled way. If the expression's value evaluated is true, the code statements within the 'if' block gets executes. Else if the expression's value is false, then the code statements in the 'else' block gets executes as shown in the example below:</p>
+
+            <p data-height="265" data-theme-id="dark" data-slug-hash="OrzLJj" data-default-tab="html,result" data-user="PlusTutorials" data-pen-title="HTML if else Conditional Statement" class="codepen">See the Pen <a href="https://codepen.io/PlusTutorials/pen/OrzLJj/">HTML if else Conditional Statement</a> by Plus Tutorials (<a href="https://codepen.io/PlusTutorials">@PlusTutorials</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+            <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+            <h2 style="letter-spacing: -1; text-shadow: 2px 2px 3px #ccc; font-size: 1.7em; padding-top: 3%;">if...else if... statement</h2>
+
+            <p style="margin: 0.0em 0.2em 0.6em 0.2em; text-align: justify;">The <b>if...else if...</b> statement helps JavaScript take a correct decision out of several conditions. It is a series of <b>if</b> statements as shown in the example below:</p>
+
+            <p data-height="265" data-theme-id="dark" data-slug-hash="ebyONX" data-default-tab="html,result" data-user="PlusTutorials" data-pen-title="JavaScript if...else if... Statement" class="codepen">See the Pen <a href="https://codepen.io/PlusTutorials/pen/ebyONX/">JavaScript if...else if... Statement</a> by Plus Tutorials (<a href="https://codepen.io/PlusTutorials">@PlusTutorials</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+            <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+            
             
             <hr style="padding-bottom: 7px;">
             
             <div style="margin-top: -1em; margin-bottom: -1em; padding-bottom: 5px;" class="row">
-              <div class="col"><a style="padding-left: 20px;" href="javascript-variables.html">&#11013; Previous Page</a></div>
-              <div class="col text-right"><a style="padding-right: 20px;" href="javascript-ifelse.html">Next Page &#10145;</a></div>
+              <div class="col"><a style="padding-left: 20px;" href="javascript-placement.html">&#11013; Previous Page</a></div>
+              <div class="col text-right"><a style="padding-right: 20px;" href="javascript-operators.html">Next Page &#10145;</a></div>
             </div>
             
             <hr>
