@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript Variables</title>
+    <meta name="description" content="Javascript Tutorial for Beginners - Learn Javascript in simple and easy steps starting from basic to advanced concepts with examples including Javascript Syntax Objects Embedding with HTML Validations Cookies Regular Expressions Literals Variables Loops Conditions." />
+    <meta name="keywords" content="Javascript, Tutorials, Learning, Beginners, Javascript Basics, Scripting Language, Javascript Tutorials, Functions, Objects, Usage." />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="plustutorials.com">
+    <link rel="stylesheet" href="../theme/css/bootstrap.min.css">
+  </head>
+
+  <body style="background-color: #F0F3F5; font-family: sans-serif;">
+    <header>
+      <nav class="navbar navbar-expand-md justify-content-between" style="background-color: white !important; box-shadow: 0 2px 10px 0 rgba(0,0,0,0.08);">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html"><img src="../imgs/plus_black.png" style="padding-right: 4%;"><b>Plus</b> <b style="color: #F7BA23;">Tutorials</b></a>
+        </div>      
+      </nav>
+    </header>
+    
+    <section style="padding: 10px 0;">
+      <div class="container">
+        <div class="row">          
+          <div class="col-lg-3 d-none d-lg-block">
+            <style>
+              a {
+                color: black;
+                text-decoration: none !important;
+              }
+
+              a:hover {
+                color: black;
+              }
+
+              a.heading {
+                color: white;
+                background-color: #F7BA23;
+                line-height: 10px;
+              }
+
+              a.borderless {
+                font-size: 13px;
+                background-color: #F0F3F5;
+                line-height: 9px;
+                border-right: 0 !important;
+                border-left: 0 !important;
+                border-top: 1px dotted #ccc;
+                border-bottom: 1px dotted #ccc;
+                margin-left: 0;
+                transition: background-color 0.5s ease-out;
+              }
+
+              a.borderless:hover {
+                background-color: #ccc;
+              }
+
+              .list-link {
+                font-size: 9px;
+              }
+            </style>
+            <ul class="list-group">
+              <a class="list-group-item heading" href="index.html">&nbsp;&nbsp;Javascript Basics Tutorial</a>
+              <a class="list-group-item borderless" href="index.html"><span class="list-link">&#9672;</span> Javascript - Home</a>
+              <a class="list-group-item borderless" href="javascript-syntax.html"><span class="list-link">&#9672;</span> Javascript - Syntax</a>
+              <a class="list-group-item borderless" href="javascript-enabling.html"><span class="list-link">&#9672;</span> Javascript - Enabling</a>
+              <a class="list-group-item borderless" href="javascript-placement.html"><span class="list-link">&#9672;</span> Javascript - Placement</a>
+              <a class="list-group-item borderless" href="javascript-variables.html" style="background-color: #D6D6D6 !important;"><span class="list-link">&#9672;</span> Javascript - Variables</a>
+            </ul>
+          </div>
+          
+          <div class="col-lg-6 col-md-12" style="background-color: white; border: 1px solid #d5dcec;">            
+            <h1 class="text-center" style="margin: 0.2em 0.2em 0.2em 0; letter-spacing: -1;text-shadow: 2px 2px 3px #ccc; font-size: 2em; padding-top: 2%;">JavaScript - Variables</h1>
+
+            <hr style="padding-bottom: 7px;">
+            
+            <div style="margin-top: -1em; margin-bottom: -1em; padding-bottom: 5px;" class="row">
+              <div class="col"><a style="padding-left: 20px;" href="javascript-placement.html">&#11013; Previous Page</a></div>
+              <div class="col text-right"><a style="padding-right: 20px;" href="javascript-operators.html">Next Page &#10145;</a></div>
+            </div>
+            
+            <hr>
+
+            <h2 style="letter-spacing: -1; text-shadow: 2px 2px 3px #ccc; font-size: 1.7em; padding-top: 3%;">JavaScript Datatypes</h2>
+
+            <p style="margin: 0.0em 0.2em 0.6em 0.2em; text-align: justify;">There are three different primitive data types available in JavaScript:<br><br>1. <b>Numbers,</b> e.g. 1337, 27.50 etc.<br>2. <b>Strings</b> of text e.g. "This text is a string" etc.<br>3. <b>Boolean</b> e.g. true or false.<br><br>Furthermore, JavaScript supports two important data types, <b>null</b> and <b>undefined</b>. Javascript additionally support a data type known as <b>object</b>.</p>
+
+            <h2 style="letter-spacing: -1; text-shadow: 2px 2px 3px #ccc; font-size: 1.7em; padding-top: 3%;">JavaScript Variables</h2>
+
+            <p style="margin: 0.0em 0.2em 0.6em 0.2em; text-align: justify;">Like all programming languages, JavaScript uses variables to sore information that can be referenced and manipulated in a computer program. Variables are very important and helpful as they allow for a way of labeling data with a descriptive name, so our programs can be easily read and understood by others. To declare a variable in JavaScript, use the <b>var</b> keyword as shown in the example below:</p>
+
+            <p data-height="265" data-theme-id="dark" data-slug-hash="EGbzzg" data-default-tab="html,result" data-user="PlusTutorials" data-pen-title="Declare JavaScript Variables" class="codepen">See the Pen <a href="https://codepen.io/PlusTutorials/pen/EGbzzg/">Declare JavaScript Variables</a> by Plus Tutorials (<a href="https://codepen.io/PlusTutorials">@PlusTutorials</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+            <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+            <p style="margin: 0.0em 0.2em 0.6em 0.2em; text-align: justify; padding-top: 3%;"><b>Variable initialization</b> takes place when we store a value in a variable as shown in the following example:</p>
+
+            <p data-height="265" data-theme-id="dark" data-slug-hash="aPVrgB" data-default-tab="html,result" data-user="PlusTutorials" data-pen-title="JavaScript Variable Initialization" class="codepen">See the Pen <a href="https://codepen.io/PlusTutorials/pen/aPVrgB/">JavaScript Variable Initialization</a> by Plus Tutorials (<a href="https://codepen.io/PlusTutorials">@PlusTutorials</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+            <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+            <h2 style="letter-spacing: -1; text-shadow: 2px 2px 3px #ccc; font-size: 1.7em; padding-top: 3%;">JavaScript Variables Scope</h2>
+
+            <p style="margin: 0.0em 0.2em 0.6em 0.2em; text-align: justify;">The variable scope refers to the location where it is defined. There are two scopes available for JavaScript variables:<br><br>1. <b>Global Variables</b> - are variables that can be defined anywhere in the JavaScript code.<br>2. <b>Local Variables</b> - are variables that are defined within a function.<br><br>It is important to note that a local variable overrides a global variable with the same name when initialized within the body of a function as shown in the example below:</p>
+
+            <p data-height="265" data-theme-id="dark" data-slug-hash="ZVadGQ" data-default-tab="html,result" data-user="PlusTutorials" data-pen-title="JavaScript Scope Variables" class="codepen">See the Pen <a href="https://codepen.io/PlusTutorials/pen/ZVadGQ/">JavaScript Scope Variables</a> by Plus Tutorials (<a href="https://codepen.io/PlusTutorials">@PlusTutorials</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+            <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+            <h2 style="letter-spacing: -1; text-shadow: 2px 2px 3px #ccc; font-size: 1.7em; padding-top: 3%;">JavaScript Variables Names</h2>
+
+            <table class="table table-bordered">
+              <tbody>
+                <tr>
+                  <td>abstract</td>
+                  <td>else</td>
+                  <td>instanceof</td>
+                  <td>switch</td>
+                </tr>
+                <tr>
+                  <td>boolean</td>
+                  <td>enum</td>
+                  <td>int</td>
+                  <td>synchronized</td>
+                </tr>
+                <tr>
+                  <td>break</td>
+                  <td>export</td>
+                  <td>interface</td>
+                  <td>this</td>
+                </tr>
+                <tr>
+                  <td>byte</td>
+                  <td>extends</td>
+                  <td>long</td>
+                  <td>throw</td>
+                </tr>
+                <tr>
+                  <td>case</td>
+                  <td>false</td>
+                  <td>native</td>
+                  <td>throw</td>
+                </tr>
+                <tr>
+                  <td>catch</td>
+                  <td>false</td>
+                  <td>native</td>
+                  <td>throws</td>
+                </tr>
+                <tr>
+                  <td>char</td>
+                  <td>finally</td>
+                  <td>null</td>
+                  <td>true</td>
+                </tr>
+                <tr>
+                  <td>class</td>
+                  <td>float</td>
+                  <td>package</td>
+                  <td>try</td>
+                </tr>
+                <tr>
+                  <td>const</td>
+                  <td>for</td>
+                  <td>private</td>
+                  <td>typeof</td>
+                </tr>
+                <tr>
+                  <td>continue</td>
+                  <td>function</td>
+                  <td>protected</td>
+                  <td>var</td>
+                </tr>
+                <tr>
+                  <td>debugger</td>
+                  <td>goto</td>
+                  <td>public</td>
+                  <td>void</td>
+                </tr>
+                <tr>
+                  <td>default</td>
+                  <td>if</td>
+                  <td>return</td>
+                  <td>volatile</td>
+                </tr>
+                <tr>
+                  <td>delete</td>
+                  <td>implements</td>
+                  <td>short</td>
+                  <td>while</td>
+                </tr>
+                <tr>
+                  <td>do</td>
+                  <td>import</td>
+                  <td>static</td>
+                  <td>with</td>
+                </tr>
+                <tr>
+                  <td>double</td>
+                  <td>in</td>
+                  <td>super</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <hr style="padding-bottom: 7px;">
+            
+            <div style="margin-top: -1em; margin-bottom: -1em; padding-bottom: 5px;" class="row">
+              <div class="col"><a style="padding-left: 20px;" href="javascript-placement.html">&#11013; Previous Page</a></div>
+              <div class="col text-right"><a style="padding-right: 20px;" href="javascript-operators.html">Next Page &#10145;</a></div>
+            </div>
+            
+            <hr>
+          
+          </div>
+
+          <div class="col-lg-3 d-none d-lg-block">
+          </div>
+        </div>
+
+        <hr>
+
+        <p style="text-align: center;">© Copyright 2018. All rights reserved.</p>
+      </div>
+    </section>
+
+    <!-- Global site tag (gtag.js) - Google Analytics 
+    ================================================= -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128570393-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-128570393-1');
+    </script>
+  </body>
+</html>
