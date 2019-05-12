@@ -11,51 +11,143 @@
 
     <!-- Bootstrap core CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Custom styles for this template -->
-    <link href="https://getbootstrap.com/docs/4.1/examples/cover/cover.css" rel="stylesheet">
+
+    <style>
+      a {
+        color: black;
+        text-decoration: none !important;
+      }
+
+      a:hover {
+        color: black;
+      }
+
+      a.heading {
+        color: white;
+        line-height: 10px;
+      }
+
+      a.borderless {
+        font-size: 13px;
+        background-color: white;
+        line-height: 9px;
+        border-right: 0 !important;
+        border-left: 0 !important;
+        border-top: 1px dotted #ccc;
+        border-bottom: 1px dotted #ccc;
+        margin-left: 0;
+        transition: background-color 0.5s ease-out;
+      }
+
+      a.borderless:hover {
+        background-color: #ccc;
+      }
+
+      .list-link {
+        font-size: 9px;
+      }
+    </style>
 
     <link rel="canonical" href="https://www.plustutorials.com/" />
   </head>
 
 
-  <body class="text-center" style="background-image:url('./imgs/action.jpg');">
+  <body style="background-color: #EEE;">
+    <section class="text-center" style="box-shadow: 0 15px 25px 0 rgba(0,0,0,0.08); background-image: url('https://www.tutorialspoint.com/questions/images/tp-new/search-bg.jpg');">
+      <div class="container" style="padding-top: 7%; padding-bottom: 7%;">
+        <h1 class="font-weight-normal" style="font-size: 45px; color: white;">Plus Tutorials</h1>
+        <p class="lead font-weight-normal" style="color: white;">The World's Leading Online Tutorials Platform</p>
 
-    <div class="container d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <main role="main" style="padding-top: 10%;">
-        <h1 class="cover-heading">Plus Tutorials</h1>
-        <h5>The best platform to help you enhance your skills and expand your knowledge.</h5>
-      </main>
-
-      <div class="container" style="padding-top: 5%;">
-        <div class="row">
-          <div class="col-lg-4">
-            <a style="text-decoration:none;" href="html/index.html">
-              <img class="rounded-circle" src="imgs/html.logo.png" width="140" height="140">
-              <h3>HTML Tutorial</h3>
-            </a>
-          </div>
-          <div class="col-lg-4">
-            <a style="text-decoration:none;" href="css/index.html">
-              <img class="rounded-circle" src="imgs/css.logo.png" width="140" height="140">
-              <h3>CSS Tutorial</h3>
-            </a>
-          </div>
-          <div class="col-lg-4">
-            <a style="text-decoration:none;" href="javascript/index.html">
-              <img class="rounded-circle" src="imgs/js.logo.png" width="140" height="140">
-              <h3>Javascript Tutorial</h3>
-            </a>
+        <div class="input-group mb-3" style="padding-top: 1%; padding-left: 22%; padding-right: 22%;">
+          <input id="search" type="text" class="form-control" placeholder="Search Plus Tutorials . . .">
+          <div class="input-group-append" onclick="window.open('https://www.google.com/search?q=site://https://www.plustutorials.com%20' + document.getElementById('search').value);">
+            <span class="input-group-text" style="cursor: pointer;">🔍</span>
           </div>
         </div>
       </div>
+    </section>
 
-      <footer class="mastfoot mt-auto">
-        <div class="inner">
-          <p style="color:white;">© Copyright 2018. All Rights Reserved.</p>
+    <section>
+      <div class="container">
+        <h1 class="font-weight-normal text-center" style="font-size: 35px; padding-top: 3%;"><img style="height: 55px; width: auto;" src="./imgs/book.library.png"> Tutorials Library</h1>
+
+        <div class="row" style="padding-top: 2%;">
+          <div class="col-md-4">
+            <ul class="list-group">
+              <a class="list-group-item heading text-center" href="https://www.plustutorials.com/html/index.html" style="background-color: #95C152;">&nbsp;&nbsp;HTML Tutorial</a>
+              <a class="list-group-item borderless" href="https://www.plustutorials.com/html/index.html"><span class="list-link">&#9672;</span> HTML - Home</a>
+              <a class="list-group-item borderless" href="https://www.plustutorials.com/html/html-overview.html"><span class="list-link">&#9672;</span> HTML - Overview</a>
+              <a class="list-group-item borderless" href="https://www.plustutorials.com/html/html-basic-tags.html"><span class="list-link">&#9672;</span> HTML - Basic Tags</a>
+              <a class="list-group-item borderless" href="https://www.plustutorials.com/html/html-elements.html"><span class="list-link">&#9672;</span> HTML - Elements</a>
+              <a class="list-group-item borderless" href="https://www.plustutorials.com/html/html-attributes.html"><span class="list-link">&#9672;</span> HTML - Attributes</a>
+              <a class="list-group-item borderless" href="https://www.plustutorials.com/html/html-formatting"><span class="list-link">&#9672;</span> HTML - Formatting</a>
+              <a class="list-group-item borderless" href="https://www.plustutorials.com/html/html-phrase-elements.html"><span class="list-link">&#9672;</span> HTML - Phrase Tags</a>
+              <a class="list-group-item borderless" href="https://www.plustutorials.com/html/html-meta-tags.html"><span class="list-link">&#9672;</span> HTML - Meta Tags</a>
+              <a class="list-group-item borderless" href="https://www.plustutorials.com/html/html-comments.html"><span class="list-link">&#9672;</span> HTML - Comments</a>
+              <a class="list-group-item borderless" href="https://www.plustutorials.com/html/html-images.html"><span class="list-link">&#9672;</span> HTML - Images</a>
+              <a class="list-group-item borderless" href="https://www.plustutorials.com/html/html-tables.html"><span class="list-link">&#9672;</span> HTML - Tables</a>
+              <a class="list-group-item borderless" href="https://www.plustutorials.com/html/html-lists.html"><span class="list-link">&#9672;</span> HTML - Lists</a>
+              <a class="list-group-item borderless" href="https://www.plustutorials.com/html/html-text-links.html"><span class="list-link">&#9672;</span> HTML - Text Links</a>
+              <a class="list-group-item borderless" href="https://www.plustutorials.com/html/html-image-links.html"><span class="list-link">&#9672;</span> HTML - Image Links</a>
+              <a class="list-group-item borderless" href="https://www.plustutorials.com/html/html-email-links.html"><span class="list-link">&#9672;</span> HTML - Email Links</a>             
+              <a class="list-group-item borderless" href="https://www.plustutorials.com/html/html-backgrounds.html"><span class="list-link">&#9672;</span> HTML - Backgrounds</a>
+              <a class="list-group-item borderless" href="https://www.plustutorials.com/html/html-colors.html"><span class="list-link">&#9672;</span> HTML - Colors</a>
+              <a class="list-group-item borderless" href="https://www.plustutorials.com/html/html-fonts.html"><span class="list-link">&#9672;</span> HTML - Fonts</a>
+              <a class="list-group-item borderless" href="https://www.plustutorials.com/html/html-header.html"><span class="list-link">&#9672;</span> HTML - Header</a>
+            </ul>
+
+            <ul class="list-group">
+              <a class="list-group-item heading" href="https://www.plustutorials.com/html/index.html" style="background-color: #95C152;">&nbsp;&nbsp;HTML References</a>
+              <a class="list-group-item borderless" href="https://www.plustutorials.com/html/html-fonts-reference.html"><span class="list-link">&#9672;</span> HTML - Fonts Reference</a>
+            </ul>
+          </div>
+
+          <div class="col-md-4">
+            <ul class="list-group">
+              <a class="list-group-item heading text-center" href="https://www.plustutorials.com/css/index.html" style="background-color: #A74173;">&nbsp;&nbsp;CSS Tutorial</a>
+              <a class="list-group-item borderless" href="https://www.plustutorials.com/css/index.html"><span class="list-link">&#9672;</span> CSS - Home</a>
+              <a class="list-group-item borderless" href="https://www.plustutorials.com/css/index.html"><span class="list-link">&#9672;</span> CSS - Introduction</a>
+              <a class="list-group-item borderless" href="https://www.plustutorials.com/css/index.html"><span class="list-link">&#9672;</span> CSS - Syntax</a>
+              <a class="list-group-item borderless" href="https://www.plustutorials.com/css/index.html"><span class="list-link">&#9672;</span> CSS - Inclusion</a>
+              <a class="list-group-item borderless" href="https://www.plustutorials.com/css/index.html"><span class="list-link">&#9672;</span> CSS - Measurement Units</a>
+              <a class="list-group-item borderless" href="https://www.plustutorials.com/css/index.html"><span class="list-link">&#9672;</span> CSS - Colors</a>
+              <a class="list-group-item borderless" href="https://www.plustutorials.com/css/index.html"><span class="list-link">&#9672;</span> CSS - Backgrounds</a>
+              <a class="list-group-item borderless" href="https://www.plustutorials.com/css/index.html"><span class="list-link">&#9672;</span> CSS - Fonts</a>
+              <a class="list-group-item borderless" href="https://www.plustutorials.com/css/css-text.html"><span class="list-link">&#9672;</span> CSS - Text</a>
+              <a class="list-group-item borderless" href="https://www.plustutorials.com/css/index.html"><span class="list-link">&#9672;</span> CSS - Images</a>
+              <a class="list-group-item borderless" href="https://www.plustutorials.com/css/index.html"><span class="list-link">&#9672;</span> CSS - Links</a>
+              <a class="list-group-item borderless" href="https://www.plustutorials.com/css/index.html"><span class="list-link">&#9672;</span> CSS - Tables</a>
+              <a class="list-group-item borderless" href="https://www.plustutorials.com/css/index.html"><span class="list-link">&#9672;</span> CSS - Borders</a>
+              <a class="list-group-item borderless" href="https://www.plustutorials.com/css/index.html"><span class="list-link">&#9672;</span> CSS - Margins</a>
+              <a class="list-group-item borderless" href="https://www.plustutorials.com/css/index.html"><span class="list-link">&#9672;</span> CSS - Lists</a>
+              <a class="list-group-item borderless" href="https://www.plustutorials.com/css/index.html"><span class="list-link">&#9672;</span> CSS - Padding</a>
+              <a class="list-group-item borderless" href="https://www.plustutorials.com/css/index.html"><span class="list-link">&#9672;</span> CSS - Cursors</a>
+              <a class="list-group-item borderless" href="https://www.plustutorials.com/css/index.html"><span class="list-link">&#9672;</span> CSS - Outlines</a>              
+              <a class="list-group-item borderless" href="https://www.plustutorials.com/css/index.html"><span class="list-link">&#9672;</span> CSS - Dimension</a>
+              <a class="list-group-item borderless" href="https://www.plustutorials.com/css/index.html"><span class="list-link">&#9672;</span> CSS - Scrollbars</a>
+            </ul>
+          </div>
+
+          <div class="col-md-4">
+            <ul class="list-group">
+              <a class="list-group-item heading text-center" href="https://www.plustutorials.com/javascript/index.html" style="background-color: #F7BA23;">&nbsp;&nbsp;Javascript Basics Tutorial</a>
+              <a class="list-group-item borderless" href="https://www.plustutorials.com/javascript/index.html"><span class="list-link">&#9672;</span> Javascript - Home</a>
+              <a class="list-group-item borderless" href="https://www.plustutorials.com/javascript/javascript-syntax.html"><span class="list-link">&#9672;</span> Javascript - Syntax</a>
+              <a class="list-group-item borderless" href="https://www.plustutorials.com/javascript/javascript-enabling.html"><span class="list-link">&#9672;</span> Javascript - Enabling</a>
+              <a class="list-group-item borderless" href="https://www.plustutorials.com/javascript/javascript-placement.html"><span class="list-link">&#9672;</span> Javascript - Placement</a>
+              <a class="list-group-item borderless" href="https://www.plustutorials.com/javascript/javascript-variables.html"><span class="list-link">&#9672;</span> Javascript - Variables</a>
+              <a class="list-group-item borderless" href="https://www.plustutorials.com/javascript/javascript-operators.html"><span class="list-link">&#9672;</span> Javascript - Operators</a>
+              <a class="list-group-item borderless" href="https://www.plustutorials.com/javascript/javascript-ifelse.html"><span class="list-link">&#9672;</span> Javascript - if...else</a>
+            </ul>
+          </div>
         </div>
-      </footer>
-    </div>
+
+        <hr>
+
+        <p style="text-align: center;">© Copyright 2019. All rights reserved.</p>
+
+      </div>
+    </section>
     
     <!-- Global site tag (gtag.js) - Google Analytics 
     ================================================= -->
